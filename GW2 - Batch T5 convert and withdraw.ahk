@@ -43,31 +43,31 @@ dragAndDrop(sleepDuration, fromX, fromY, toX, toY) {
 
 ; Line up bank row with inventory row
 ; Drags 2 bank rows into 4 inventory rows separated by 1 row
-NumpadDiv::
-  MouseGetPos, fromX, fromY
+; NumpadDiv::
+;   MouseGetPos, fromX, fromY
 
-  sleepDuration := 100
-  bankTabX := 830
-  bankTab2Y := 340
-  bankTab3Y := 370
-  inventoryX := 550
-  inventoryY := 340
+;   sleepDuration := 100
+;   bankTabX := 830
+;   bankTab2Y := 340
+;   bankTab3Y := 370
+;   inventoryX := 550
+;   inventoryY := 340
 
-  Loop 4 {
-    ; first 4 items in row 1
-    dragAndDrop(sleepDuration, fromX, fromY, inventoryX, inventoryY)
-    Sleep, sleepDuration
-    dragAndDrop(sleepDuration, fromX, fromY + 60, inventoryX, inventoryY + 60*3)
-    Sleep, sleepDuration
-    dragAndDrop(sleepDuration, fromX + 60*4, fromY, inventoryX, inventoryY + 60)
-    Sleep, sleepDuration
-    dragAndDrop(sleepDuration, fromX + 60 *4, fromY + 60, inventoryX, inventoryY + 60*4)
+;   Loop 4 {
+;     ; first 4 items in row 1
+;     dragAndDrop(sleepDuration, fromX, fromY, inventoryX, inventoryY)
+;     Sleep, sleepDuration
+;     dragAndDrop(sleepDuration, fromX, fromY + 60, inventoryX, inventoryY + 60*3)
+;     Sleep, sleepDuration
+;     dragAndDrop(sleepDuration, fromX + 60*4, fromY, inventoryX, inventoryY + 60)
+;     Sleep, sleepDuration
+;     dragAndDrop(sleepDuration, fromX + 60 *4, fromY + 60, inventoryX, inventoryY + 60*4)
 
-    fromX += 60
-    inventoryX += 60
-    Sleep, sleepDuration
-  }
-Return
+;     fromX += 60
+;     inventoryX += 60
+;     Sleep, sleepDuration
+;   }
+; Return
 
 NumpadMult::
   MouseGetPos, fromX, fromY
