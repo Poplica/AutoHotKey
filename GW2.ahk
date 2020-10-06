@@ -105,15 +105,15 @@ PgDn::
   Sleep, sleepDuration
   Click, 1890, 80 ; deposit all
   Sleep, sleepDuration
-  Click, 1060, 620 ; take all
-  Sleep, sleepDuration
+  ; Click, 1060, 620 ; take all
+  ; Sleep, sleepDuration
 
-  Click, right, 1460, 135 ; right click copper kit
-  ; Click, right, 1515, 135 ; right click runecrafter kit
+  ; Click, right, 1460, 135 ; right click copper kit
+  Click, right, 1515, 135 ; right click runecrafter kit
   ; Click, right, 1570, 135 ; right click silver kit
   Sleep, sleepDuration + 50
-  Click, 1520, 170 ; salvage blues
-  ; Click, 1520, 200 ; salvage greens
+  ; Click, 1520, 170 ; salvage blues
+  Click, 1520, 200 ; salvage greens
   ; Click, 1600, 220 ; salvage yellows
   Sleep, sleepDuration
   Click, 900, 765 ; ok (with a lot of greens in inventory)
