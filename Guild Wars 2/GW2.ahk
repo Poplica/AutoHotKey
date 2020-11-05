@@ -101,9 +101,7 @@ Return
 PgDn::
   sleepDuration := 120
 
-  Click, 1890, 60 ; inventory cog
-  Sleep, sleepDuration
-  Click, 1890, 80 ; deposit all
+  Click, 1825, 60 ; deposit all
   Sleep, sleepDuration
   ; Click, 1060, 620 ; take all
   ; Sleep, sleepDuration
