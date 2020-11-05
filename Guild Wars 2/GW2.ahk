@@ -120,6 +120,11 @@ PgDn::
   Sleep, sleepDuration
 Return
 
+; ~F1::
+;   Sleep, 10
+;   Send, {F2}
+; Return
+
 ; Give 250 exotic luck to Drooburt
 ; PgUp::
 ;   Loop 10000 {
