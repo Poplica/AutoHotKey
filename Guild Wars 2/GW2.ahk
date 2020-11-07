@@ -81,6 +81,22 @@ Return
 ;   Send, {``}
 ; Return
 
+; Infinite Crystallized Magic
+; Hover mouse over the CM, then start script. Alt + Equal to start. Ctrl + NumpadSub to stop
+!=::
+  MouseGetPos, currX, currY
+  Loop {
+    Click, currX, currY
+    Click, currX, currY
+    Sleep, 16000
+    Send, {Escape}
+    Sleep, 1500 ; 1460
+    Send, {i}
+    Sleep, 1
+    MouseMove, currX, currY
+  }
+Return
+
 ; Hold home to auto click
 Home::
   While (GetKeyState("Home","P")) {
