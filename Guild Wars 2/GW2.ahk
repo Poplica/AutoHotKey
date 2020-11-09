@@ -88,11 +88,11 @@ Return
   Loop {
     Click, currX, currY
     Click, currX, currY
-    Sleep, 16000
+    Sleep, 12000
     Send, {Escape}
     Sleep, 1500 ; 1460
     Send, {i}
-    Sleep, 1
+    Sleep, 200
     MouseMove, currX, currY
   }
 Return
