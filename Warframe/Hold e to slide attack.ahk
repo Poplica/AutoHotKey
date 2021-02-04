@@ -4,17 +4,35 @@
 
 SendMode, Input
 
+; $e::
+;   While (GetKeyState("e","P")) {
+;     Send, {LCtrl down}
+;     Send, {e}
+;     Send, {LCtrl up}
+
+;     ; main
+;     ; Sleep, 10
+;     ; Sleep, 190 ; volt
+;     ; Sleep, 250 ; resource
+;     Sleep, 290 ; loctidra - 91%
+;     ; Sleep, 320 ; berserker
+;     ; Sleep, 350 ; fury
+
+;     ; alt
+;     ; Sleep, 370 ; berserker
+;     ; Sleep, 390 ; fury
+;   }
+; Return
+
 $e::
   While (GetKeyState("e","P")) {
-    Send, {LCtrl down}
     Send, {e}
-    Send, {LCtrl up}
 
     ; main
     ; Sleep, 10
-    ; Sleep, 190 ; volt
+    Sleep, 190 ; volt
     ; Sleep, 250 ; resource
-    Sleep, 290 ; loctidra - 91%
+    ; Sleep, 290 ; loctidra - 91%
     ; Sleep, 320 ; berserker
     ; Sleep, 350 ; fury
 
@@ -37,7 +55,7 @@ Return
 ^NumpadAdd::
   Send, t 
   Sleep, 100
-  Send, /join koto.{Enter}{Esc}
+  Send, /join koto{Enter}{Esc}
 Return
 ^+NumpadAdd::
   Send, t 
@@ -49,9 +67,6 @@ Return
   Sleep, 100
   Send, /unstuck{Enter}{Esc}
 Return
-^NumpadDiv::
-  Send, qweqwe22{Enter}
-Return
 
 ^+e::
   Suspend, Toggle
@@ -62,20 +77,32 @@ Return
 Return
 
 ^Numpad7::
-  Send, Qweqwe22!{Enter}
+  Send, Qweqwe22{!}
+  KeyWait, Ctrl
+  Send, {Enter}
+Return
+^Numpad8::
+  Send, p4sswarframe
+  KeyWait, Ctrl
+  Send, {Enter}
+Return
+^Numpad9::
+  Send, qweqwe22
+  KeyWait, Ctrl
+  Send, {Enter}
 Return
 
-; 6::
-;   BlockInput, MouseMove
-;   Send, {Esc}
-;   Sleep, 200
-;   Click, 400, 725
-;   Sleep, 700
-;   Send, {Enter}
-;   Sleep, 250
-;   Send, {Enter}
-;   BlockInput, MouseMoveOff
-; Return
+6::
+  BlockInput, MouseMove
+  Send, {Esc}
+  Sleep, 200
+  Click, 400, 725
+  Sleep, 700
+  Send, {Enter}
+  Sleep, 250
+  Send, {Enter}
+  BlockInput, MouseMoveOff
+Return
 
 ; *~$2::
 ; 	energy := energy - 13
