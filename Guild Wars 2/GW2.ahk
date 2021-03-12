@@ -72,14 +72,27 @@ Return
 ;   Send, {XButton1}{space}
 ; Return
 
+; Emote dodge cancel for LOYF
+XButton1::
+  Send, /
+  Sleep, 50
+  Send, laugh
+  Send, {Enter}
+  Send, {XButton1}
+  ; Sleep, 60 ; uncomment for 2x loyf single press
+  ; Send, {XButton1}
+Return
+
 ; ; Double jump spam at 30 fps
-; CapsLock::
-;   Send, {space}
-;   Sleep, 48
-;   Send, {1}
-;   Sleep, 28
-;   Send, {``}
-; Return
+CapsLock::
+  Send, {space}
+  Sleep, 48
+  Send, {1}
+  Sleep, 28
+  Send, {``}
+  Sleep, 50
+  
+Return
 
 ; Infinite Crystallized Magic
 ; Hover mouse over the CM, then start script. Alt + Equal to start. Ctrl + NumpadSub to stop
