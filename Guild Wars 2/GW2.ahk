@@ -94,12 +94,26 @@ Return
 ; Return
 
 ; Devourer precast
+; Z::
+; Send, {F4}
+; Sleep, 100
+; Send, {F2}
+; Sleep, 1250
+; Send, {F4}{F5}
+; Return
+
+; Siax ligma precast
 Z::
+Send, {Numpad1}{Numpad2}
+Sleep, 100
+Send, {5}
 Send, {F4}
 Sleep, 100
 Send, {F2}
-Sleep, 1250
+Sleep, 1700
 Send, {F4}{F5}
+Sleep, 100
+Send, {``}
 Return
 
 ; Infinite Crystallized Magic
