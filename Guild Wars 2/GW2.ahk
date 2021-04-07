@@ -68,8 +68,8 @@ Return
 ; Return
 
 ; Dodge jump
-; XButton1::
-;   Send, {XButton1}{space}
+; ~XButton1::
+;   Send, {space}
 ; Return
 
 ; Emote dodge cancel for LOYF
