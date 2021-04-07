@@ -103,18 +103,19 @@ Return
 ; Return
 
 ; Siax ligma precast
-Z::
-Send, {Numpad1}{Numpad2}
-Sleep, 100
-Send, {5}
-Send, {F4}
-Sleep, 100
-Send, {F2}
-Sleep, 1700
-Send, {F4}{F5}
-Sleep, 100
-Send, {``}
-Return
+; Z::
+; Send, {5}
+; Sleep, 332
+; Send, {F4}
+; Sleep, 201
+; Send, {F2}
+; Sleep, 1169
+; Send, {F4}
+; Sleep, 300
+; Send, {F5}
+; Sleep, 133
+; Send, {``}
+; Return
 
 ; Infinite Crystallized Magic
 ; Hover mouse over the CM, then start script. Alt + Equal to start. Ctrl + NumpadSub to stop
