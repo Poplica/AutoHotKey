@@ -106,7 +106,7 @@ Return
 ; X::
 ; x := 1020 ; trap 1 x pos
 
-; Loop 4 {
+; Loop 3 {
 ;   Click, R, 1095, 1030 ; util key: e
 ;   Sleep, 700
 ;   MouseMove, x, 970
@@ -125,6 +125,78 @@ Return
 ; }
 ; Return
 
+; swaps to spike/flame/viper trap
+; Loop 3 {
+;   Click, %xPosUtil%, 1030, Right
+;   Sleep, 200
+;   Click, %xPosTrapSlot%, 970
+;   Sleep, 200
+
+;   xPosUtil += 45
+;   xPosTrapSlot += 95
+; }
+
+X::
+xPosTrapSlot := 1020 ; trap 1 x pos
+xPosUtil := 1095 ; util key: e
+
+; swaps to spike/flame/viper trap
+Loop 3 {
+  Click, %xPosUtil%, 1030, Right
+  Sleep, 200
+  Click, %xPosTrapSlot%, 970
+  Sleep, 200
+
+  xPosUtil += 45
+  xPosTrapSlot += 95
+}
+
+Send, {e}
+Sleep, 400
+Click, 85, 335 ; trait swap. need sleep in between otherwise it's too fast
+Sleep, 200
+Click, 85, 335
+Sleep, 500
+
+Send, {r}
+Sleep, 400
+Click, 85, 470
+Sleep, 200
+Click, 85, 470
+Sleep, 500
+
+Send, {c}
+Sleep, 400
+Click, 85, 335
+Sleep, 200
+Click, 85, 335
+Sleep, 500
+
+
+Sleep, 2000
+Click, 555, 95 ; revert build
+
+Return
+
+; Loop 3 {
+;   Click, R, 1095, 1030 ; util key: e
+;   Sleep, 700
+;   MouseMove, xPosTrapSlot, 970
+;   Click
+;   Sleep, 700
+;   Send, {e}
+;   Sleep, 400  
+;   Click, 83, 335 ; trait swap
+;   Sleep, 300
+;   Click, 83, 335 ; trait swap
+
+;   Sleep, 1500
+;   Click, 555, 95 ; revert build
+;   Sleep, 500
+;   xPosTrapSlot += 45
+; }
+; Return
+
 ; Siax ligma precast
 ; Z::
 ; Send, {5}
@@ -134,7 +206,7 @@ Return
 ; Send, {F2}
 ; Sleep, 1169
 ; Send, {F4}
-; Sleep, 300
+; Sleep, 200
 ; Send, {F5}
 ; Sleep, 133
 ; Send, {``}
