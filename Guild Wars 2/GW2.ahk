@@ -102,21 +102,8 @@ Return
 ; Send, {F4}{F5}
 ; Return
 
-; bugTrap(x, y) {
-;   Click, R, 1095, 1030 ; util key: e
-;   Sleep, 1000
-;   Click, x, y ; trap 1
-;   Sleep, 700
-;   Send, {e}
-;   Sleep, 400  
-;   Click, 83, 335 ; trait swap
-;   Sleep, 300
-;   Click, 83, 335 ; trait swap
-; }
-
 ; Slb bugged pretraps. 
 ; X::
-; ; bugTrap(1020, 970)
 ; x := 1020 ; trap 1 x pos
 
 ; Loop 4 {
