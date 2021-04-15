@@ -35,9 +35,9 @@ Return
 Return
 
 ; Dodge jump
-; ~XButton1::
-;   Send, {space}
-; Return
+XButton1::
+  Send, {Space}{XButton1}
+Return
 
 ; Emote dodge cancel for LOYF
 ; XButton1::
@@ -81,7 +81,7 @@ Return
 ;   Send, {e}
 ;   Sleep, 400  
 ;   Click, 83, 335 ; trait swap
-;   Sleep, 100
+;   Sleep, 50
 ;   Click, 83, 335 ; trait swap
 
 ;   Sleep, 700
@@ -93,7 +93,7 @@ Return
 ; Siax ligma precast
 ; Z::
 ; Send, {5}
-; Sleep, 332
+; Sleep, 132
 ; Send, {F4}
 ; Sleep, 201
 ; Send, {F2}
@@ -128,6 +128,14 @@ Home::
     Sleep, 50
   }
 Return
+
+; Jump spam
+; ~Space::
+;   While (GetKeyState("Space","P")) {
+;     Send, {Space}
+;     Sleep, 50
+;   }
+; Return
 
 ; Feed Candy Corn Gobbler
 PgUp::
