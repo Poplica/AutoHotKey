@@ -34,10 +34,34 @@ Return
 
 Return
 
-; Dodge jump
-XButton1::
-  Send, {Space}{XButton1}
+; GG macro
+NumpadDiv::
+  Send, /
+  Sleep, 50
+  Send, gg{Enter}
 Return
+
+; ===== SAB macros =====
+; Dodge jump & Jump spam
+; XButton1::
+;   Send, {Space}{XButton1}
+; Return
+; Space::
+;   While (GetKeyState("Space","P")) {
+;     Send, {Space}
+;     Sleep, 50
+;   }
+; Return
+
+; Double jump spam at 30 fps
+; CapsLock::
+;   Send, {Space}
+;   Sleep, 48
+;   Send, {1}
+;   Sleep, 28
+;   Send, {``}
+;   Sleep, 50
+; Return
 
 ; Emote dodge cancel for LOYF
 ; XButton1::
@@ -48,16 +72,6 @@ Return
 ;   Send, {XButton1}
 ;   ; Sleep, 60 ; uncomment for 2x loyf single press
 ;   ; Send, {XButton1}
-; Return
-
-; Double jump spam at 30 fps
-; CapsLock::
-;   Send, {space}
-;   Sleep, 48
-;   Send, {1}
-;   Sleep, 28
-;   Send, {``}
-;   Sleep, 50
 ; Return
 
 ; Devourer precast
@@ -128,14 +142,6 @@ Home::
     Sleep, 50
   }
 Return
-
-; Jump spam
-; ~Space::
-;   While (GetKeyState("Space","P")) {
-;     Send, {Space}
-;     Sleep, 50
-;   }
-; Return
 
 ; Feed Candy Corn Gobbler
 PgUp::
