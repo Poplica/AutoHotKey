@@ -84,6 +84,7 @@ Return
 ; Return
 
 ; Slb bugged pretraps. 
+; Siax ligma precast
 ; X::
 ; x := 1020 ; trap 1 x pos
 
@@ -103,8 +104,6 @@ Return
 ;   x += 45
 ; }
 ; Return
-
-; Siax ligma precast
 ; Z::
 ; Send, {5}
 ; Sleep, 132
