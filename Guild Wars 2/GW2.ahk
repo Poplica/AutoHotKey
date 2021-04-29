@@ -3,7 +3,8 @@
 #SingleInstance, Force
 
 SendMode, Input
-SetKeyDelay, 0
+; SetKeyDelay, 0
+SetBatchLines, -1
 
 ; Forge first 4 slots
 Insert::
@@ -83,27 +84,7 @@ Return
 ; Send, {F4}{F5}
 ; Return
 
-; Slb bugged pretraps. 
 ; Siax ligma precast
-; X::
-; x := 1020 ; trap 1 x pos
-
-; Loop 3 {
-;   Click, R, 1095, 1030 ; util key: e
-;   Sleep, 200
-;   Click, %x%, 970
-;   Sleep, 200
-;   Send, {e}
-;   Sleep, 400  
-;   Click, 83, 335 ; trait swap
-;   Sleep, 50
-;   Click, 83, 335 ; trait swap
-
-;   Sleep, 700
-;   Click, 555, 95 ; revert build
-;   x += 45
-; }
-; Return
 ; Z::
 ; Send, {5}
 ; Sleep, 132
