@@ -4,7 +4,7 @@
 
 Repository of AHK scripts that automates repetitive tasks.
 
-## Demo gifs
+## Demo vids
 
 GW2 T5 material promotion <https://i.imgur.com/IMElb60.mp4>
 
