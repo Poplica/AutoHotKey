@@ -1,14 +1,24 @@
-# What is this repo for?
+# AutoHotKey Scripts
 
-Repository of my personal AHK scripts that I have used and created over the years.
+## What is this repo for?
 
-## Demo gif
+Repository of AHK scripts that automates repetitive tasks.
 
+## Demo gifs
 
+GW2 T5 material promotion
+![Broken link](https://i.imgur.com/IMElb60.gif)
 
-## Why is this repo useful?
+Slowed down
+![Broken link](https://i.imgur.com/fj7oRQi.gif)
 
-All scripts in this repo have been made because a repetitive action had to be executed with a keyboard and/or mouse. I've used some scripts for speedrunning too. 
+## Why is this useful?
+
+These scripts have helped me a lot for input-intensive/specific tasks, and they have served for a variety of purposes: botting for resources, autoclicking, and macros.
+
+## How to use these scripts?
+
+Make sure that [AutoHotKey](https://www.autohotkey.com/) is installed and download the repo. Most files are already saved as AHK, so you only need to double click on the scripts to activate them. Likewise, activated scripts will rebind keys to their respective functions.
 
 ## Languages/Libraries used
 
