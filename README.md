@@ -6,9 +6,9 @@ Repository of AHK scripts that automates repetitive tasks.
 
 ## Demo gifs
 
-GW2 T5 material promotion https://i.imgur.com/IMElb60.mp4
+GW2 T5 material promotion <https://i.imgur.com/IMElb60.mp4>
 
-Slowed down https://i.imgur.com/fj7oRQi.mp4
+Slowed down <https://i.imgur.com/fj7oRQi.mp4>
 
 ## Why is this useful?
 

@@ -7,23 +7,23 @@ SetControlDelay, 0
 ; add timer that toggles a variable for checking if stage 12 is still running
 ; ctrl + pgup: exploration
 
-winName := "BlueStacks App Player"
-colorPopo1 := 0x231607
-colorPopo2 := 0x241E0F
+global winName := "BlueStacks App Player"
+global colorPopo1 := 0x231607
+global colorPopo2 := 0x241E0F
 
-xSpam := 845
-ySpam := 535
+global xSpam := 845
+global ySpam := 535
 
-xStage := 360
-yStage := 460
-xTown := 785
-xConfirm := 540
-yConfirm := 425
+global xStage := 360
+global yStage := 460
+global xTown := 785
+global xConfirm := 540
+global yConfirm := 425
 
-yQuest1 := 175
+global yQuest1 := 175
 
-xPopo := 932
-yPopo := 393
+global xPopo := 932
+global yPopo := 393
 
 defaultSettings()
 

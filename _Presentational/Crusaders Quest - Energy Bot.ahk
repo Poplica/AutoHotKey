@@ -11,21 +11,21 @@ SetControlDelay, 0
 ; toggle suspend on scripts:: ctrl + shift + down / ScrollLock | bring front and mid: ctrl + shift + left
 ; ctrl + pgup: exploration
 
-winName := "BlueStacks App Player"
+global winName := "BlueStacks App Player"
 
-xSpam := 845 
-ySpam := 535 
-xGoddess := 1000
-yGoddess := 200
-yChampion := 435
+global xSpam := 845 
+global ySpam := 535 
+global xGoddess := 1000
+global yGoddess := 200
+global yChampion := 435
 
-xStage := 360 
-yStage := 460
-xTown := 785 
-xConfirm := 540
-yConfirm := 425
+global xStage := 360 
+global yStage := 460
+global xTown := 785 
+global xConfirm := 540
+global yConfirm := 425
 
-yQuest1 := 175
+global yQuest1 := 175
 
 defaultSettings()
 
