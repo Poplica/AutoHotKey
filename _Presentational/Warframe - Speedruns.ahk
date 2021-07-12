@@ -7,6 +7,7 @@ SendMode, Input
 
 global energy := 200
 
+; xy spam
 $CapsLock::
   While (GetKeyState("CapsLock","P")) {
     Send, {x}{y}{XButton1}
@@ -16,6 +17,7 @@ $CapsLock::
   }
 Return
 
+; auto use all pads
 $`::
   Send, {v}{F1}{F2}{F4}{4}
   Send, {v}{F4}{4}
@@ -28,6 +30,7 @@ $`::
   Send, {Numpad4}
 Return
 
+; xy spam rebind
 $XButton2::
   While (GetKeyState("XButton2","P")) {
     Send, {x}{y}{XButton1}
@@ -35,6 +38,7 @@ $XButton2::
   }
 Return
 
+; abort mission
 6::
 	energy := 200
 	BlockInput, MouseMove
@@ -59,6 +63,7 @@ Return
   }
 Return
 
+; auto pad accounting for mprime usage
 *~$4::
 	energy := energy - 25
 	if (energy < 50) {
@@ -68,6 +73,7 @@ Return
 	}
 Return
 
+; auto grineer cipher
 $z::
   SendInput x
   Sleep, (140+130)
@@ -88,6 +94,7 @@ $z::
   Send, {Space}
 Return
 
+; reload script
 NumpadSub::
 Reload
 Return

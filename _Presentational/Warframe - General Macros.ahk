@@ -4,6 +4,7 @@
 
 SendMode, Input
 
+; slide attack spam
 $e::
   While (GetKeyState("e","P")) {
     Send, {LCtrl down}
@@ -24,6 +25,7 @@ $e::
   }
 Return
 
+; melee attack spam
 $e::
   While (GetKeyState("e","P")) {
     Send, {e}
@@ -42,6 +44,7 @@ $e::
   }
 Return
 
+; bleedout skip
 $Insert::
   Click, L
   Send, {XButton1}
@@ -52,30 +55,35 @@ $Insert::
   Send, {x up}
 Return
 
+; join on koto
 ^NumpadAdd::
   Send, t 
   Sleep, 100
   Send, /join koto{Enter}{Esc}
 Return
+; join on bash
 ^+NumpadAdd::
   Send, t 
   Sleep, 100
   Send, /join bash.{Enter}{Esc}
 Return
+; unstuck macro
 ^NumpadMult::
   Send, t
   Sleep, 100
   Send, /unstuck{Enter}{Esc}
 Return
 
+; susepnd script
 ^+e::
   Suspend, Toggle
 Return
 
+; reload script
 ^NumpadSub::
   Reload
 Return
-
+; pw macros
 ^Numpad7::
   Send, Qweqwe22{!}
   KeyWait, Ctrl
@@ -92,6 +100,7 @@ Return
   Send, {Enter}
 Return
 
+; abort mission macro
 6::
   BlockInput, MouseMove
   Send, {Esc}
@@ -104,6 +113,7 @@ Return
   BlockInput, MouseMoveOff
 Return
 
+; auto energy pads for nova portals
 *~$2::
 	energy := energy - 13
 	if (energy < 50) {
@@ -123,10 +133,12 @@ x::
     Sleep, 3100
   }
 Return
+; reload rebind
 z::
   Reload
 Return
 
+; energy pad rebind
 $XButton1::
   Sleep, 5900
   Send, {XButton1}

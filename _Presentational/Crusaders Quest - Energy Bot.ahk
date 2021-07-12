@@ -29,7 +29,8 @@ global yQuest1 := 175
 
 defaultSettings()
 
-~XButton2:: ; spam blocks
+; starts bot to auto run energy down. spams blocks automatically
+~XButton2::
 	if WinActive(winName) {
 		start:
 		if (numRetry >= 0) {
@@ -56,6 +57,7 @@ defaultSettings()
 	}
 Return
 
+; helper functions
 defaultSettings() {
 	global
 	numRetry := 0
@@ -133,11 +135,13 @@ acceptBottomMap() {
 	WinMove, % winName,, 447, 0
 Return
 
-~NumpadSub:: ; toggle ac safety
+; toggle ac safety
+~NumpadSub::
 	if WinActive(winName) 
 		flagAC := !flagAC
 Return
 
+; autoclicker
 ~`:: ; toggle ac
 	if flagAC and WinActive(winName) 
 		toggleAC := !toggleAC
@@ -147,13 +151,15 @@ Return
 	}
 Return
 
-~NumpadAdd:: ; goddess only spam
+; goddess only spam
+~NumpadAdd::
 	toggleGoddess := !toggleGoddess
 	if WinActive(winName) 
 		while toggleGoddess 
 			clickPos(xGoddess, yGoddess, 4.75) ; goddess activation : 1.75 sera
 Return
 
+; bot setting readjustments
 !1::setAutoFarm(2, timeRun) ; for longer stgs
 Return
 !2::setAutoFarm(2)
@@ -171,6 +177,7 @@ Return
 !8::setAutoFarm(8)
 Return
 
+; manual function keybinds
 ~^Delete::
 	KeyWait, Ctrl
 	if WinActive(winName) 
@@ -205,11 +212,13 @@ Return
 		rushExploration()
 Return
 
+; pause/reload script
 Pause::Pause
 Return
 !Pause::Reload
 Return
 
+; disables bot
 ~XButton1::
 	WinGetPos,,, Width, Height, %winName%
 	if (Width != 1024 && Height != 576)
@@ -223,8 +232,9 @@ Return
 		Exitapp
 Return
 
+; swap suspends
 ScrollLock::
-^+Down:: ; swap suspends
+^+Down::
 	defaultSettings()
 	MouseGetPos, xPos
 	MouseMove, xPos, 1079

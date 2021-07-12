@@ -27,6 +27,7 @@ global yPopo := 393
 
 defaultSettings()
 
+; starts the bot for farming popo
 ~XButton2::
 	if WinActive(winName) 
 		toggle := !toggle
@@ -64,6 +65,7 @@ defaultSettings()
     }
 Return
 
+; helper functions
 getColor(x, y) {
 	WinGetActiveTitle, lastWinName
 	WinActivate, % winName
@@ -121,6 +123,7 @@ acceptBottomMap() {
 	clickPos2(910, 50) ; close
 }
 
+; manual function keybinds
 ^+Left::
 	WinActivate, % winName
 	WinMove, % winName,, 447, 0
@@ -160,11 +163,13 @@ Return
 		rushExploration()
 Return
 
+; pause/reload script
 Pause::Pause
 Return
 !Pause::Reload
 Return
 
+; disables bot
 ~XButton1::
 	WinMove, %winName%,,,, 1024, 576
 	if WinActive(winName) 
@@ -178,8 +183,9 @@ Return
  	}
 Return
 
+; swap suspends
 ScrollLock::
-^+Down:: ; swap suspends
+^+Down::
 	defaultSettings()
 	MouseGetPos, xPos
 	MouseMove, xPos, 1079

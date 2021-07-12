@@ -160,10 +160,12 @@ PgUp::
   }
 Return
 
+; Reload script
 ^NumpadSub::
   Reload
 Return
 
+; Suspend script
 ^NumpadMult::
   Suspend, Toggle
 Return
